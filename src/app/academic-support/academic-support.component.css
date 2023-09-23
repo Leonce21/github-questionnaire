@@ -1,0 +1,23 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.main-body {
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1348px;
+}
+
+.main-body mat-form-field {
+    width: 100%;
+}
+
+.action {
+    display: flex;
+    gap: 5px;
+}
+
+.required-indicator{
+    color: red; /* You can choose your preferred color */
+  margin-left: 5px; /* Add spacing between label and asterisk */
+}

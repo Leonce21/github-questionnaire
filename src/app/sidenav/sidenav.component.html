@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html>
+<div class="sidenav-horizontal" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div class="logo-container mt-4">
+        <button class="logo navbar-brand mb-5" (click)="toggleCollapse()">
+            <img src="../../assets/logo/Logo_bg.png" class="navbar-brand-image" style="width: 60px; height: 42px;">
+        </button>
+        <div class="logo-text mb-5" style=" margin-left: 15px;" *ngIf="collapsed" @fadeInOut>
+            <img src="../../assets/logo/logo_text.png" style="width: 150px; height: 40px;">
+        </div>
+
+        <button class="btn-close mb-5" *ngIf="collapsed" @rotate (click)="closeSidenav()">
+            <i class="fas fa-xmark close-icon"></i>
+        </button>
+    </div>
+    
+    <ul class="sidenav-nav-horizontal">
+        <li class="sidenav-nav-item-horizontal" *ngFor="let data of navData">
+            <a class="sidenav-nav-link-horizontal" 
+                [routerLink]="[data.routeLink]" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{exact: true}">
+
+                <i class="sidenav-link-icon ms-2" [class]="data.icon"></i>
+                <span class="sidenav-link-text ms-3" @fadeInOut *ngIf="collapsed">{{data.label}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
+ -->

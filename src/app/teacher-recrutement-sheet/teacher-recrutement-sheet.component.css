@@ -1,0 +1,46 @@
+form{
+    overflow: hidden;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+li {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+h3,
+li,
+.mat-label,
+label {
+    color: black;
+}
+
+form input::placeholder {
+    opacity: 0.5;
+}
+
+.action {
+    padding: 15px;
+}
+
+.action button {
+    flex: 1;
+}
+.required-indicator{
+    color: red; /* You can choose your preferred color */
+  margin-left: 5px; /* Add spacing between label and asterisk */
+}
+@media(max-width:750px){
+    form .content{
+        position: relative;
+        padding-right: 5px;
+        left: -30px;
+    }
+    
+}

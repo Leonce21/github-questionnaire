@@ -1,0 +1,41 @@
+
+nav:before,
+nav:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    padding: 0 5px;
+    
+}
+
+.navbar-nav li a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar-nav li .active{
+    color:#03a9f4;
+}
+
+.navbar-nav li a:hover{
+    color:#03a9f4;   
+}
+
+a:hover:after{
+    width: 100%;
+}

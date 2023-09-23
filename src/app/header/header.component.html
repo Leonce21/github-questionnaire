@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<nav ngxNavbarDynamicExpand class="navbar-light bg-light">
+    <div class="">
+        <button
+        class="navbar-toggler bg-light"
+        type="button"
+        (click)="collapse.toggle()"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="toggle navigation"
+      >
+        
+        <i class="fa-solid fa-bars"></i>
+        
+      </button>
+    </div>
+   
+    <ngx-navbar-collapse id="main-nav" #collapse="ngxNavbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="sidenav-nav-item" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" 
+                [routerLink]="[data.routeLink]" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{exact: true}">
+
+              
+                <span class="sidenav-link-text ms-3">{{data.label}}</span>
+            </a>
+        </li>
+      </ul>
+    </ngx-navbar-collapse>
+</nav>
